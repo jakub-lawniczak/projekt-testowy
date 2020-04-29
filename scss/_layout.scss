@@ -1,0 +1,56 @@
+.section {
+    &--banner {
+        height: 100vh;
+    }
+    &--photo-text {
+        padding: 180px 0 0;
+        &--last {
+            padding-bottom: 180px;
+        }
+    } 
+    &--contact {
+        padding: 50px 0;
+        background-color: $c-gray-light;
+        
+    }
+}
+.wrapper {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    &--row { 
+        display: flex; 
+        justify-content: space-between;
+        &-reverse {
+            flex-direction: row-reverse;
+        }
+    }
+    &--arrows {
+        height: 25px;
+    }
+} 
+
+@media screen and (max-width: 1024px) {
+    .section {
+        &--photo-text {
+            padding: 60px 0 0;
+            &--last {
+                padding-bottom: 60px;
+            }
+        } 
+        &--contact {
+            padding: 50px 0;
+            background-color: $c-gray-light;
+            
+        }
+    }
+
+
+    .wrapper {
+        padding: 0 30px;
+        &--row {
+        flex-direction: column;
+        max-width: 100%;
+        }
+    }
+} 

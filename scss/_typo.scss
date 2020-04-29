@@ -1,0 +1,50 @@
+h1,h2,h3,h4,h5,
+.h1,.h2,.h3,.h4,.h5 {
+    line-height: 1.5; 
+}
+
+h1, .h1 {
+    font-size: $fz-1;
+}
+h2, .h2 {
+    font-size: $fz-2;
+}
+h3, .h3 {
+    font-size: $fz-3;
+}
+h4, .h4 {
+    font-size: $fz-4;
+}
+h5, .h5 {
+    font-size: $fz-5;
+} 
+.content {
+    color: $c-content;
+    font-size: $fz-c;
+    line-height: 1.8;
+    padding-right: 56px;
+    p:not(.list-title) {
+        margin-bottom: 40px;
+    }
+    a {
+        color: $c-accent-second;
+        text-decoration: none;
+    }
+    &__list {
+        position: relative;
+        list-style: none;
+        li { 
+            padding-left: 40px;
+            &:before {
+                content: '\2192';
+                position: absolute;
+                left: 0;
+                color: $c-accent-second;
+            }
+        }
+    } 
+}
+
+.title {
+    margin-bottom: 40px;
+}   

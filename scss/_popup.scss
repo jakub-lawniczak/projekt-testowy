@@ -1,0 +1,50 @@
+.popup {
+    background:white;
+    position: fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    z-index:101;
+    width:590px; /*Change your width here*/
+    height:345px; /*Change your height here*/
+    margin:auto;
+    
+    @media(max-width:768px){
+      width:90%;
+      margin:auto 5%;
+    }
+    /* Popup Inner */
+    .popup-inner{
+      position:relative;
+      padding:1em;
+      
+      input.s3-btn-close{
+        position:absolute;
+        top:-0.5em;
+        right:-0.5em;
+        
+        width: 20px;
+        height: 20px;
+        background:black;
+        border:solid 2px white;
+        color:white;
+        cursor:pointer;
+        
+        border-radius: 50%;
+        
+        outline:none;
+      } 
+    } 
+  } 
+
+  .overlay {
+    background:rgba(0,0,0,0.8);
+    opacity:0.8;
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px; 
+    right:0px;
+    z-index:100;
+  }

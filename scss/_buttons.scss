@@ -1,0 +1,32 @@
+.btn {
+    border: 2px solid $c-white;
+    border-radius: 50px;
+    padding: 13px 30px;
+    transition: all .3s;
+    cursor: pointer;
+    .text {
+        color: $c-white;
+        font-size: 14px;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+    &:hover {
+        background-color: $c-white;
+        .text {
+            color: $c-black;
+        }
+    }
+    &--full {
+        background-color: $c-white;
+        .text {
+            color: $c-black;
+        }
+        &:hover {
+            background-color: transparent;
+            .text {
+                color: $c-white;
+            }
+        }
+    }
+
+} 

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>projekt-testowy</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,900&display=swap&subset=latin-ext" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="site-top js-site-top">
+        <div class="wrapper">
+            <a class="site-top__logo-hld" href="#"">
+                <img src="img/logo.svg" class="logo" alt="logo">
+            </a>
+            <div class="nav-primary-hld">
+                <ul class="nav-primary">
+                    <li class="nav-primary__item"><a href="#" class="footer-nav_link">
+                        <a href="" class="nav-primary__link">
+                            <span class="nav-primary__text">I stopnia</span>
+                        </a>
+                    </li>
+                    <li class="nav-primary__item"><a href="#" class="footer-nav_link">
+                        <a href="" class="nav-primary__link">
+                            <span class="nav-primary__text">II stopnia</span>
+                        </a>
+                    </li> 
+                    <li class="nav-primary__item"><a href="#" class="footer-nav_link">
+                        <a href="" class="nav-primary__link">
+                            <span class="nav-primary__text">Podyplomowe</span>
+                        </a>
+                    </li>
+                    <li class="nav-primary__item"><a href="#" class="footer-nav_link">
+                        <a href="" class="nav-primary__link">
+                            <span class="nav-primary__text">Szkolenia</span>
+                        </a>
+                    </li>
+                    <li class="nav-primary__item"><a href="#" class="footer-nav_link">
+                        <a href="" class="nav-primary__link">
+                            <span class="nav-primary__text">Usługi</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <header class="site-top-mobile js-site-top--mobile">
+        <a class="site-top-mobile__logo-hld" href="#"">
+            <img src="img/logo.svg" class="logo" alt="logo">
+        </a>
+        <label for="toggle">
+            <div class="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </label>
+        <input type="checkbox" id="toggle" onchange="mobileNavToggle()"> 
+        <ul class="mobile-nav">
+            <li class="mobile-nav__item">
+                <a href="" class="mobile-nav__link">
+                    <span class="mobile-nav__text">I stopnia</span>
+                </a>
+            </li>
+            <li class="mobile-nav__item">
+                <a href="" class="mobile-nav__link">
+                    <span class="mobile-nav__text">II stopnia</span>
+                </a>
+            </li> 
+            <li class="mobile-nav__item">
+                <a href="" class="mobile-nav__link">
+                    <span class="mobile-nav__text">Podyplomowe</span>
+                </a>
+            </li>
+            <li class="mobile-nav__item">
+                <a href="" class="mobile-nav__link">
+                    <span class="mobile-nav__text">Szkolenia</span>
+                </a>
+            </li>
+            <li class="mobile-nav__item">
+                <a href="" class="mobile-nav__link">
+                    <span class="mobile-nav__text">Usługi</span>
+                </a> 
+            </li>
+        </ul>
+    </header>
+    
+    <section class="section section--banner">
+        <div class="banner">
+            <div class="js-banner-item banner__item banner__item--1 fade">
+                <div class="banner__content-hld">
+                    <div class="wrapper">
+                        <div class="banner__content">
+                            <div class="banner__text">
+                                <h2 class="banner__title">
+                                    Będziesz się uczyć z ciekawością.
+                                    <span class="text-colored">
+                                        Obiecujemy.
+                                    </span>
+                                </h2>
+                            </div> 
+                            <div class="banner__buttons">
+                                <div class="btn btn--full">
+                                    <div class="text">
+                                        Zobacz więcej
+                                    </div>
+                                </div>
+                                <div class="btn">
+                                    <div class="text">
+                                        Umów się z aniołem
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="js-banner-item banner__item banner__item--2 fade">
+                <div class="banner__content-hld">
+                    <div class="wrapper">
+                        <div class="banner__content">
+                            <div class="banner__text">
+                                <h2 class="banner__title">
+                                    Lorem vas ipsum i dolor warum.
+                                    <br>
+                                    <span class="text-colored">
+                                        dolor
+                                    </span>
+                                </h2>
+                            </div>
+                            <div class="banner__buttons">
+                                <div class="btn btn--full">
+                                    <div class="text">
+                                        testtest
+                                    </div>
+                                </div>
+                                <div class="btn">
+                                    <div class="text">
+                                        test longlong
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="js-banner-item banner__item banner__item--3 fade">
+                <div class="banner__content-hld">
+                    <div class="wrapper">
+                        <div class="banner__content">
+                            <div class="banner__text">
+                                <h2 class="banner__title">
+                                    Lorem ipsum
+                                    <br>
+                                    <span class="text-colored">
+                                        dolor
+                                    </span>
+                                </h2>
+                            </div>
+                            <div class="banner__buttons">
+                                <div class="btn btn--full">
+                                    <div class="text">
+                                        Lorem ipsum
+                                    </div>
+                                </div>
+                                <div class="btn">
+                                    <div class="text">
+                                        Lorem ipsum dolor
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="arrows-hld">
+                <div class="wrapper wrapper--arrows">
+                    <a class="prev" onclick="plusSlides(-1)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30.117" height="20.992" viewBox="0 0 30.117 20.992">
+                            <path class="banner__arrow" data-name="nawigacja slajdera" d="M250.891,712.6H273l-8.364,8.4h5.913l10.456-10.5L270.552,700h-5.913L273,708.4H250.891Z" transform="translate(-250.891 -700.004)" fill="#fff"/>
+                        </svg>
+                    </a>
+                    <a class="next" onclick="plusSlides(1)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30.117" height="20.992" viewBox="0 0 30.117 20.992">
+                            <path class="banner__arrow" data-name="nawigacja slajdera" d="M250.891,712.6H273l-8.364,8.4h5.913l10.456-10.5L270.552,700h-5.913L273,708.4H250.891Z" transform="translate(-250.891 -700.004)" fill="#fff"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="banner__dots" style="text-align:center">
+                <span class="banner__dots__dot" onclick="currentSlide(1)"></span> 
+                <span class="banner__dots__dot" onclick="currentSlide(2)"></span> 
+                <span class="banner__dots__dot" onclick="currentSlide(3)"></span> 
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--photo-text">
+        <div class="wrapper wrapper--row">
+            <div class="text-hld">
+                <div class="title-hld">
+                    <h3 class="title">Dla kogo?</h3>
+                </div>
+                <div class="content">
+                    <p>Dedykowane nauczycielom posiadającym przygotowanie pedagogiczne, którzy chcą uzyskać merytoryczne i metodyczne przygotowanie do nauczania kolejnego przedmiotu - Geografii.</p>
+                    <p>Studia adresowane są do osób legitymujących się wyższym wykształceniem na poziomie studiów licencjackim o specjalnościach nadających kwalifikacje nauczycielskie i przygotowanie pedagogiczne, lub słuchaczy legitymujących się wyższym wykształceniem na poziomie studiów magisterskich nadających kwalifikacje nauczycielskie i przygotowanie pedagogiczne, zgodnie z Rozporządzeniem Ministra Edukacji Narodowej z dnia 1 sierpnia 2017 r. w sprawie szczegółowych kwalifikacji wymaganych od nauczycieli <a href="#">(Dz.U. 2017 poz. 1575)</a>.</p>
+                    <p class="list-title">Wymagane od kandydata:</p>
+                    <ul class="content__list">
+                        <li>Ukończone studia wyższe</li>
+                        <li>Przygotowanie pedagogiczne</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="photo-hld">
+                <img class="photo" src="img/globe.png" alt="globe">
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--photo-text section--photo-text-reverse">
+        <div class="wrapper wrapper--row wrapper--row-reverse">
+            <div class="text-hld">
+                <div class="title-hld">
+                    <h3 class="title">Po co?</h3>
+                </div>
+                <div class="content">
+                    <p>UW wie co zrobić, by programy proponowanych kierunków studiów były jak najbardziej atrakcyjne z biznesowego punktu widzenia. Do współpracy zapraszamy przedsiębiorców, trenerów, doświadczonych praktyków. Dbamy o to, żeby nasi studenci korzystali z doświadczenia i wiedzy osób, które odniosły w życiu zawodowy sukces. Dążymy do tego, by wybierający naszą uczelnię już w trakcie studiów mieli kontakt z jak największą liczbą pracodawców i praktyków biznesu ponieważ wiemy, że pomoże to im w zdobyciu wielu potrzebnych kwalifikacji oraz umiejętności, które zaprocentują w każdym miejscu pracy a także zainspiruje do poszerzania swoich kompetencji.</p>
+                </div>
+            </div>
+            <div class="photo-hld">
+                <img class="photo" src="img/handshake.png" alt="handshake">
+            </div>
+        </div>
+    </section>
+    <section class="section section--photo-text  section--photo-text--last">
+        <div class="wrapper wrapper--row">
+            <div class="text-hld">
+                <div class="title-hld">
+                    <h3 class="title">Z kim?</h3>
+                </div>
+                <div class="content">
+                    <p>Ciekawość jest najpotężniejszą cechą ludzką, która popycha ludzi do ciągłego rozwoju. CDV to miejsce, w którym studenci z zainteresowaniem i z przyjemnością zdobywają wiedzę. Zarówno studenci, absolwenci, jak i pracownicy to osoby nie tylko ciekawe świata, ale także pełne pasji w odkrywaniu nowych rzeczy i w pozytywny sposób wpływające na swoje otoczenie</p>
+                    <p>Nasze kierunki studiów są interesujące i innowacyjne, tworzone we współpracy z pracodawcami oraz na podstawie trendów w światowej gospodarce i kierunku zmian na dynamicznym rynku pracy. Nasi absolwenci znajdują pracę zgodną ze swoimi zainteresowaniami i wykształceniem.</p>
+                </div>
+            </div>
+            <div class="photo-hld">
+                <div class="video-link" id="js-video-link">
+                    <img class="photo" src="img/video.png" alt="video">
+                    <div class="play-button-hld">
+                        <img src="img/play-button.svg" alt="play-button" class="play-button">
+                    </div>
+                </dib>
+            </div> 
+        </div> 
+    </section>
+
+    <section class="section section--contact">
+        <div class="wrapper">
+            <div class="contact-hld">
+                <div class="contact__title">
+                    <p class="main">Nie znalazłeś odpowiedniego kontaktu?</p>
+                    <span class="sub">Skorzystaj z formularza.</span>
+                </div>
+                <form id="js-contact-form" action="">
+                    <div class="form-row">
+                        <div class="form-col">
+                            <input type="text" name="form-firstName" id="form-firstName" class="form-textbox form-textbox-half" required>
+                            <label for="form-firstName" class="form-label form-label">Imię</label>                            
+                        </div>
+                        <div class="form-col">
+                            <input type="text" name="form-secondName" id="form-secondName" class="form-textbox form-textbox-half" required>
+                            <label for="form-secondName" class="form-label form-label">Nazwisko</label>                            
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <input type="email" name="form-email" id="form-email" class="form-textbox" required>
+                        <label for="form-email" class="form-label form-label">Adres e-mail</label>   
+                    </div>
+                    <div class="form-row">
+                        <textarea id="form-msg" rows="6" placeholder=" " name="form-msg"  class="form-textarea"></textarea>  
+                        <label for="form-msg" class="form-label-textarea">Twoja wiadomość</label> 
+                    </div>
+                    <input type="checkbox" id="rodo" name="rodo" value="true">
+                    <label for="rodo" class="rodo-text">Wyrażam zgodę na przetwarzanie moich danych osobowych w rozumieniu ustawy z dnia 29 sierpnia 1997 roku o ochronie danych osobowych oraz ustawy z dnia 16 lipca 2004 roku Prawo telekomunikacyjne w celach marketingowych przez Collegium Da Vinci i oświadczam, iż podanie przeze mnie danych osobowych jest dobrowolne oraz iż zostałem poinformowany o prawie żądania dostępu do moich danych osobowych, ich zmiany oraz usunięcia.</label>
+                    <div class="form-btn-hld">
+                        <button class="form-btn" id="btn-submit" type="submit">Wyśliij</button>
+                   </div>
+                   <div class="error-msg">
+                       <div class="text">
+                           Example error message
+                       </div>
+                   </div>
+                   <div class="success-msg">
+                       <div class="text">
+                           Example successful message
+                       </div>
+                   </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="wrapper wrapper--row">
+            <div class="footer__adress-col">
+                <div class="footer__adress">
+                    <span class="footer__adress-line">ul. Głogowska 10</span>
+                    <span class="footer__adress-line">61-719 Poznań</span>
+                    <a href="tel:+4861271100" class="tel footer__adress-line">tel. 61 27 11 000</a>
+                </div>
+                <div class="footer-map-hld">
+                    <div class="footer-map">
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-nav-hld">
+                <div class="footer-nav__col">
+                    <p class="footer-nav__title">O nas</p>
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav_item"><a href="#" class="footer-nav_link">Dlaczego CDV</a></li>
+                        <li class="footer-nav_item"><a href="#" class="footer-nav_link">Kadra naukowa</a></li>
+                        <li class="footer-nav_item"><a href="#" class="footer-nav_link">Dla mediów</a></li>
+                        <li class="footer-nav_item"><a href="#" class="footer-nav_link">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav__col">
+                    <p class="footer-nav__title">Dla kandydata</p>
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav_item"><a href="#" class="footer-nav_link">Poradnik maturzysty</a></li>
+                        <li class="footer-nav_item"><a href="#" class="footer-nav_link">Rekrutacja</a></li>
+                        <li class="footer-nav_item"><a href="#" class="footer-nav_link">Kredyt studencki</a></li>
+                        <li class="footer-nav_item"><a href="#" class="footer-nav_link">Studia dla cudzoziemców</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav__col">
+                    <p class="footer-nav__title">Dla studenta</p>
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav_item"><a href="#" class="footer-nav_link">Wirtualna Uczelnia</a></li>
+                        <li class="footer-nav_item"><a href="#" class="footer-nav_link">Stypendia</a></li>
+                        <li class="footer-nav_item"><a href="#" class="footer-nav_link">Biuro Karier</a></li>
+                        <li class="footer-nav_item"><a href="#" class="footer-nav_link">Studiuj dalej</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav__col">
+                    <p class="footer-nav__title">Dla biznesu</p>
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav_item"><a href="#" class="footer-nav_link">Współpraca z biznesem</a></li>
+                        <li class="footer-nav_item"><a href="#" class="footer-nav_link">EmotionsLAB</a></li>
+                        <li class="footer-nav_item"><a href="#" class="footer-nav_link">Wynajem sal</a></li>
+                        <li class="footer-nav_item"><a href="#" class="footer-nav_link">Znajdź pracownika</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav__col">
+                    <p class="footer-nav__title">Na skróty</p>
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav_item"><a href="#" class="footer-nav_link">Aktualności</a></li>
+                        <li class="footer-nav_item"><a href="#" class="footer-nav_link">Wydarzenia</a></li>
+                        <li class="footer-nav_item"><a href="#" class="footer-nav_link">Konferencje</a></li>
+                        <li class="footer-nav_item"><a href="#" class="footer-nav_link">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- popup -->
+    <div class="popup" id="js-popup" style="display:none;">
+        <div class="popup-inner">
+          <input type="button" id="js-popup-close" name="Close" class="s3-btn-close" value="&times;">
+          <!-- place for youtube/vimeo iframe -->
+        </div> 
+    </div>
+    <div class="overlay" id="js-overlay" style="display:none;"></div>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUR2xiyj8SRzQxwTXVIFHsXatMz2WsDFM&callback=initMap">
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

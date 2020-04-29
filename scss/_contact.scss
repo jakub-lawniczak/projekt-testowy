@@ -1,0 +1,169 @@
+.contact-hld {
+    width: 580px;
+    margin: 0 auto; 
+}
+.contact__title{
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.57;
+    .main {
+        font-size: $fz-c;
+    }
+    .sub {
+        color: #7B94A5;
+        font-size: $fz-c-s;
+    }
+}
+
+
+.form-row {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+	margin-top: 30px;
+}
+.form-col {
+    width: 48%;
+    position: relative;
+}
+
+.form-label {
+	position: absolute;
+	top: 17px;
+	left: 20px;
+	color: #999;
+	cursor: text;
+    transition: all .15s ease-in-out 0s;
+    z-index: 1;
+}
+
+
+.form-textbox { 
+    position: relative;
+    height: 49px;
+    z-index: 1;
+    // box-shadow: inset 0 0 10px rgba(0,0,0,.1);
+}
+.form-textarea {
+    height: 160px;
+}
+.form-textbox,
+.form-submit,
+.form-textarea {
+    position: relative; 
+	width: 100%;
+    padding: 20px 20px 5px;
+    border: 0;
+}
+.form-label-textarea {
+	position: absolute;
+	top: 17px;
+	left: 20px;
+	color: #999; 
+	cursor: text;
+    transition: all .15s ease-in-out 0s;
+}
+.form-textbox:focus,
+.form-textarea:focus {
+    border: 1px solid #FF3139;
+    outline: none;
+}
+.form-textbox:focus ~ .form-label,
+.form-textbox:valid ~ .form-label,
+.form-textarea:focus ~ .form-label-textarea,
+.form-textarea:valid ~ .form-label-textarea {
+	top: 6px;
+    left: 14px; 
+	color: #999 !important; 
+	font-size: .6em;
+	color: inherit;
+	cursor: pointer;
+}
+.form-textarea:placeholder-shown ~ .form-label-textarea {
+    position: absolute;
+	top: 17px;
+	left: 20px;
+	color: #999; 
+	font-size: 1em;
+	cursor: text;
+    transition: all .15s ease-in-out 0s;
+}
+
+
+
+
+.rodo-text {   
+    position: relative;
+    display: block;
+    color: $c-content;
+    font-size: 10px;
+    font-weight: 600;
+    margin: 12px 0;
+    padding: 0 30px 0 20px;
+    letter-spacing: .05em;
+}
+  
+  input[type=checkbox] {
+    display: none;
+  }
+  
+  input[type=checkbox] + .rodo-text:before {
+    content: "\2714";
+    border: 0;
+    border-radius: 0;
+    background-color: $c-white;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    left: 0;
+    padding-left: 0.2em;
+    padding-bottom: 0.3em;
+    margin-right: 0.2em;
+    vertical-align: bottom;
+    color: transparent;
+    transition: .2s;
+  }
+  
+  input[type=checkbox] + .rodo-text:active:before {
+    transform: scale(0);
+  }
+  
+  input[type=checkbox]:checked + .rodo-text:before {
+    background-color: $c-white;
+    color: $c-accent-second;
+  }
+
+  .form-btn-hld {
+      display: flex;
+      justify-content: center;
+      margin-top: 12px;
+      .form-btn {
+          border: 0;
+          border-radius: 25px;
+          background-color: $c-accent-second;
+          padding: 16px 35px;
+          color: $c-white;
+          font-size: 14px;
+          font-weight: 900;
+          text-transform: uppercase;
+          transition: all .3s;
+          &:hover {
+              background-color: $c-accent-second-dark;
+              letter-spacing: 1px;
+              padding: 16px 31px;
+          }
+      }
+  }
+  .error-msg {
+      display: none;
+  }
+  .success-msg {
+      display: none;
+  }
+  @media screen and (max-width: 1024px) {
+    .contact-hld {
+        max-width: 100%;
+    }
+} 
+ 
